@@ -1,0 +1,61 @@
+:root {
+  color-scheme: dark;
+
+  --orange: #FF5C33;
+  --orange-hover: #E3522D;
+  --orange-tint: rgba(255, 92, 51, .10);
+  --steel: #D5DAE3;
+  --on-orange: #000;            --bg: #000;
+  --bg-sunk: #0A0A0A;
+  --surface: #0F0F0F;
+  --ink: #fff;
+  --ink-85: rgba(255, 255, 255, .85);
+  --ink-60: rgba(255, 255, 255, .60);  --layer-06: rgba(255, 255, 255, .06);
+  --layer-08: rgba(255, 255, 255, .08);
+  --layer-12: rgba(255, 255, 255, .12);
+  --layer-22: rgba(255, 255, 255, .22);
+  --accent-text: #FF5C33;              --focus: #FF5C33;
+  --shadow-lift: 0 12px 32px -14px rgba(255, 92, 51, .28);
+  --shadow-window: 0 0 0 1px rgba(255,255,255,.14), 0 40px 100px -30px rgba(0,0,0,.9);
+
+  --ok: #3DDC6B;
+  --ok-dot: #3DDC6B;
+  --ok-tint: rgba(61, 220, 107, .14);
+  --bad: #FF6B5E;
+  --bad-dot: #FF6B5E;
+  --bad-tint: rgba(255, 107, 94, .14);
+  --wait: #B7BECB;
+  --wait-tint: rgba(213, 218, 227, .12);
+  --unk: #F5B83D;
+  --unk-tint: rgba(245, 184, 61, .14);
+
+  --font-display: Futura, "Futura PT", "Century Gothic", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-code: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --t-12: .75rem;
+  --t-14: .875rem;
+  --t-16: 1rem;
+  --t-18: 1.125rem;
+  --t-21: 1.3125rem;
+  --t-24: 1.5rem;
+  --t-36: 2.25rem;
+  --t-48: 3rem;
+  --t-72: 4.5rem;
+
+  --r-ui: 4px;
+  --r-card: 10px;
+  --r-window: 12px;
+  --r-pill: 999px;
+
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1200px;
+  --measure: 38rem;
+
+  --ease: ease;
+  --dur: .25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0s; }
+}
