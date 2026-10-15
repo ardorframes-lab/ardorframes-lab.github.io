@@ -13,17 +13,22 @@
 <link rel="alternate" hreflang="x-default" href="https://labs.ardorframes.com/launch-board/">
 <link rel="icon" href="/assets/brand/ardor-labs-cube-orange-sm.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/tokens.css">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/page.css">
 <script src="/assets/js/lang.js"></script>
+<script src="/assets/js/home.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/ko/" aria-label="Ardor Labs 홈">
-      <svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg>
-      <span class="brand-word" aria-hidden="true">Ardor Labs</span>
-    </a>
+    <div class="brand-lockup">
+      <a class="brand" href="/ko/" aria-label="Ardor Labs 홈">
+        <svg class="brand-mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg>
+      </a>
+      <span class="brand-app">Launch Board</span>
+    </div>
     <nav class="site-nav" aria-label="주 메뉴">
       <a href="/ko/#apps">앱</a>
       <a data-nav="github" href="https://github.com/ardorframes-labs">GitHub</a>
@@ -40,111 +45,168 @@
   </div>
 </header>
 
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <g id="cube" transform="translate(0,523) scale(.1,-.1)">
+      <path class="band-top" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/>
+      <g class="cube-ink">
+        <path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/>
+        <path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/>
+        <path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/>
+        <path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/>
+        <path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/>
+        <path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/>
+        <path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/>
+        <path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/>
+        <path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/>
+        <path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/>
+        <path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/>
+        <path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/>
+        <path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
 <main id="main">
   <section class="lb-hero" aria-labelledby="lb-title">
-    <div class="wrap">
+    <div class="lb-intro">
       <img class="app-icon" src="/assets/brand/launch-board-icon.svg" alt="" width="96" height="96">
-      <h1 class="display" id="lb-title">여러 Mac의 launchd를 한 보드에서.</h1>
-      <p class="lead">Mac의 launchd 서비스를 한 창에서 봅니다. 무엇이 실행 중이고 무엇이 대기하거나 실패했는지, 어떤 TCP 포트를 열고 있는지 확인합니다. 다른 Mac을 SSH로 추가하면 함께 볼 수 있습니다.</p>
+      <h1 id="lb-title">Launch Board</h1>
+      <p class="lb-line">Mac의 launchd 서비스를 한눈에 보고 제어합니다. 다른 Mac은 건드리지 않고 상태만 확인합니다.</p>
+      <ul class="badges" aria-label="릴리스 정보">
+        <li><span>최신</span> 0.3.1</li>
+        <li>macOS 14+</li>
+        <li>오픈소스</li>
+        <li>수집 데이터 없음</li>
+      </ul>
       <div class="btn-row">
-        <a class="btn btn-primary" href="/ko/launch-board/download/"><svg viewBox="0 0 18 18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5v9M5 8l4 4 4-4M3 15.5h12"/></svg>Mac용 다운로드</a>
+        <a class="btn" href="/ko/launch-board/download/"><svg viewBox="0 0 18 18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5v9M5 8l4 4 4-4M3 15.5h12"/></svg>Mac용 다운로드</a>
         <a class="btn btn-secondary" href="https://github.com/ardorframes-labs/launch-board"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>GitHub에서 보기</a>
       </div>
-      <ul class="meta-line" aria-label="릴리스 정보">
-        <li>v0.3.1</li>
-        <li>macOS 14+</li>
-        <li>Apple Silicon</li>
-      </ul>
-
-      <figure class="shot">
-        <div class="window" aria-hidden="true">
-          <div class="win-titlebar">
-            <div class="traffic"><i></i><i></i><i></i></div>
-            <div class="win-title">Launch Board <span>이 Mac</span></div>
-            <div class="win-tools">
-              <div class="win-seg"><b>내 LaunchAgents</b><span>시스템</span></div>
-              <div class="win-search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="4.6"/><path d="M10.4 10.4L14 14"/></svg>서비스 검색</div>
-              <svg class="win-icon-btn" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.5 8.5A6 6 0 1 0 16 12"/><path d="M16 4v4.5h-4.5"/></svg>
-            </div>
-          </div>
-          <div class="win-body">
-            <aside class="win-side">
-              <h4>내 서비스</h4>
-              <ul>
-                <li class="is-active">전체 서비스 <em>9</em></li>
-                <li>즐겨찾기 <em>2</em></li>
-                <li>주의 필요 <em>1</em></li>
-              </ul>
-              <h4>그룹</h4>
-              <ul>
-                <li><span class="sw" style="background:#FF5C33"></span>개발 서버 <em>4</em></li>
-                <li><span class="sw" style="background:#5B8DEF"></span>백업 <em>2</em></li>
-                <li><span class="sw" style="background:#A78BDA"></span>미디어 <em>3</em></li>
-              </ul>
-              <h4>서버</h4>
-              <ul>
-                <li><span class="host"></span>이 Mac</li>
-                <li><span class="host"></span>studio-mac <span class="ro">조회 전용</span></li>
-                <li><span class="host is-off"></span>build-mini <span class="ro">오프라인</span></li>
-              </ul>
-            </aside>
-            <div class="win-main">
-              <div class="win-main-head">
-                <strong>전체 서비스</strong><span>9</span>
-                <span class="chip is-on">전체</span><span class="chip">실행 중</span><span class="chip">실패</span>
-              </div>
-              <table class="svc">
-                <thead><tr><th>실행</th><th>서비스</th><th>건강</th><th class="num">CPU</th><th class="num col-wide">RSS</th><th class="num col-wide">TCP 포트</th></tr></thead>
-                <tbody>
-<tr class="is-selected"><td><span class="badge run">실행 중</span></td><td class="label"><span class="star">★</span>dev.example.api</td><td><span class="badge unk">미확인</span></td><td class="num">2.1%</td><td class="num col-wide">142 MB</td><td class="num col-wide">8080</td></tr>
-<tr><td><span class="badge run">실행 중</span></td><td class="label"><span class="star">★</span>com.example.backup</td><td><span class="badge unk">미확인</span></td><td class="num">0.3%</td><td class="num col-wide">38 MB</td><td class="num col-wide dim">—</td></tr>
-<tr><td><span class="badge run">실행 중</span></td><td class="label">dev.example.worker</td><td><span class="badge unk">미확인</span></td><td class="num">6.8%</td><td class="num col-wide">210 MB</td><td class="num col-wide dim">—</td></tr>
-<tr><td><span class="badge run">실행 중</span></td><td class="label">org.example.cache</td><td><span class="badge unk">미확인</span></td><td class="num">1.2%</td><td class="num col-wide">96 MB</td><td class="num col-wide">6380</td></tr>
-<tr><td><span class="badge fail">실패 · 78</span></td><td class="label">com.example.thumbnailer</td><td><span class="badge na">—</span></td><td class="num dim">—</td><td class="num col-wide dim">—</td><td class="num col-wide dim">—</td></tr>
-<tr><td><span class="badge wait">대기</span></td><td class="label">com.example.media-sync</td><td><span class="badge na">—</span></td><td class="num dim">—</td><td class="num col-wide dim">—</td><td class="num col-wide dim">—</td></tr>
-<tr><td><span class="badge run">실행 중</span></td><td class="label">dev.example.docs</td><td><span class="badge unk">미확인</span></td><td class="num">0.1%</td><td class="num col-wide">24 MB</td><td class="num col-wide">4000</td></tr>
-<tr><td><span class="badge wait">대기</span></td><td class="label">com.example.ingest-watch</td><td><span class="badge na">—</span></td><td class="num dim">—</td><td class="num col-wide dim">—</td><td class="num col-wide dim">—</td></tr>
-<tr><td><span class="badge run">실행 중</span></td><td class="label">dev.example.preview</td><td><span class="badge unk">미확인</span></td><td class="num">0.0%</td><td class="num col-wide">18 MB</td><td class="num col-wide">5173</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <aside class="win-detail">
-              <div>
-                <div class="d-label">dev.example.api</div>
-                <div class="d-badges"><span class="badge run">실행 중</span><span class="badge unk">미확인</span></div>
-              </div>
-              <dl>
-                <dt>종류</dt><dd>사용자 LaunchAgent</dd>
-                <dt>파일</dt><dd><code>~/Library/LaunchAgents/dev.example.api.plist</code></dd>
-                <dt>PID</dt><dd>4123</dd>
-                <dt>건강</dt><dd>미확인 — 아직 건강 확인 기능 없음</dd>
-                <dt>수신 포트</dt><dd>TCP 8080</dd>
-              </dl>
-              <div class="d-graph">
-                <h5>CPU, 최근 1시간 <b>2.1%</b></h5>
-                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><line class="base" x1="0" y1="29.5" x2="100" y2="29.5"/><polygon class="area" points="0,30 0,22 8,20 16,23 24,18 32,21 40,12 48,19 56,22 64,17 72,20 80,9 88,16 100,14 100,30"/><polyline class="line" points="0,22 8,20 16,23 24,18 32,21 40,12 48,19 56,22 64,17 72,20 80,9 88,16 100,14"/></svg>
-              </div>
-              <div class="d-graph">
-                <h5>메모리 (RSS) <b>142 MB</b></h5>
-                <svg viewBox="0 0 100 30" preserveAspectRatio="none"><line class="base" x1="0" y1="29.5" x2="100" y2="29.5"/><polygon class="area alt" points="0,30 0,19 10,18.5 20,18 30,17.5 40,17 50,16 60,16 70,15 80,14.5 90,14 100,13 100,30"/><polyline class="line alt" points="0,19 10,18.5 20,18 30,17.5 40,17 50,16 60,16 70,15 80,14.5 90,14 100,13"/></svg>
-              </div>
-              <div class="d-actions"><span class="is-dim">시작</span><span>재시작</span><span>중지</span></div>
-              <p class="d-note">실행할 때마다 먼저 확인합니다.</p>
-            </aside>
-          </div>
-          <div class="win-status"><span>서비스 9개</span><span>주의 필요 1개</span><span>3초 전 갱신</span><span>원격 송신 없음</span></div>
-        </div>
-        <figcaption>다른 Mac 두 대를 추가한 Launch Board 화면입니다. 여기 나오는 label과 기기 이름은 모두 예시입니다.</figcaption>
-        <p class="visually-hidden">창에는 예시 서비스 9개가 실행 상태(실행 중, 대기, 실패), 건강 상태(건강 확인 기능이 아직 없어 모두 미확인), CPU, 메모리, TCP 포트와 함께 나열됩니다. 선택한 서비스 dev.example.api의 상세 패널에는 plist 파일, PID, 수신 포트, CPU와 메모리 이력, 시작·재시작·중지 버튼이 있습니다.</p>
-      </figure>
+      <p class="spec">v0.3.1 · macOS 14+ · Apple Silicon</p>
     </div>
+
+    <figure class="demo" id="demo" data-demo data-label-pause="데모 일시정지" data-label-play="데모 재생">
+      <div class="demo-window">
+        <div class="demo-bar">
+          <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="demo-title">Launch Board — 데모</div>
+        </div>
+        <div class="demo-screen">
+          <video muted loop playsinline preload="none" poster="" data-poster=""
+                 aria-label="Launch Board 데모 녹화: 서비스 둘러보기, 상태별 필터, 다른 Mac으로 전환">
+            <source data-src="" type="video/webm; codecs=vp9">
+            <source data-src="" type="video/mp4">
+          </video>
+          <div class="demo-placeholder">
+            <span class="demo-tc" aria-hidden="true">00:00:00:00</span>
+            <span class="demo-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span class="demo-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.86l13.6-8.2a1 1 0 0 0 0-1.72L7.5 2.94A1 1 0 0 0 6 3.8Z"/></svg></span>
+            <span class="demo-cap">데모 녹화 준비 중</span>
+          </div>
+          <button class="demo-toggle" type="button" aria-label="데모 일시정지">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.86l13.6-8.2a1 1 0 0 0 0-1.72L7.5 2.94A1 1 0 0 0 6 3.8Z"/></svg>
+          </button>
+        </div>
+      </div>
+      <figcaption>Launch Board를 짧게 소리 없이 반복 재생합니다. 서비스와 Mac 이름은 모두 예시입니다.</figcaption>
+    </figure>
+
+    <figure class="showcase">
+      <div class="float">
+        <div class="shot">
+          <div class="window" aria-hidden="true">
+                    <div class="win-titlebar">
+                      <div class="traffic"><i></i><i></i><i></i></div>
+                      <div class="win-title">Launch Board <span>이 Mac</span></div>
+                      <div class="win-tools">
+                        <div class="win-seg"><b>내 LaunchAgents</b><span>시스템</span></div>
+                        <div class="win-search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="4.6"/><path d="M10.4 10.4L14 14"/></svg>서비스 검색</div>
+                        <svg class="win-icon-btn" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.5 8.5A6 6 0 1 0 16 12"/><path d="M16 4v4.5h-4.5"/></svg>
+                      </div>
+                    </div>
+                    <div class="win-body">
+                      <aside class="win-side">
+                        <h4>내 서비스</h4>
+                        <ul>
+                          <li class="is-active">전체 서비스 <em>9</em></li>
+                          <li>즐겨찾기 <em>2</em></li>
+                          <li>주의 필요 <em>1</em></li>
+                        </ul>
+                        <h4>그룹</h4>
+                        <ul>
+                          <li><span class="sw" style="background:#FF5C33"></span>개발 서버 <em>4</em></li>
+                          <li><span class="sw" style="background:#5B8DEF"></span>백업 <em>2</em></li>
+                          <li><span class="sw" style="background:#A78BDA"></span>미디어 <em>3</em></li>
+                        </ul>
+                        <h4>서버</h4>
+                        <ul>
+                          <li><span class="host"></span>이 Mac</li>
+                          <li><span class="host"></span>studio-mac <span class="ro">조회 전용</span></li>
+                          <li><span class="host is-off"></span>build-mini <span class="ro">오프라인</span></li>
+                        </ul>
+                      </aside>
+                      <div class="win-main">
+                        <div class="win-main-head">
+                          <strong>전체 서비스</strong><span>9</span>
+                          <span class="chip is-on">전체</span><span class="chip">실행 중</span><span class="chip">실패</span>
+                        </div>
+                        <table class="svc">
+                          <thead><tr><th>실행</th><th>서비스</th><th>건강</th><th class="num">CPU</th><th class="num col-wide">RSS</th><th class="num col-wide">TCP 포트</th></tr></thead>
+                          <tbody>
+          <tr class="is-selected"><td><span class="badge run">실행 중</span></td><td class="label"><span class="star">★</span>dev.example.api</td><td><span class="badge unk">미확인</span></td><td class="num">2.1%</td><td class="num col-wide">142 MB</td><td class="num col-wide">8080</td></tr>
+          <tr><td><span class="badge run">실행 중</span></td><td class="label"><span class="star">★</span>com.example.backup</td><td><span class="badge unk">미확인</span></td><td class="num">0.3%</td><td class="num col-wide">38 MB</td><td class="num col-wide dim">—</td></tr>
+          <tr><td><span class="badge run">실행 중</span></td><td class="label">dev.example.worker</td><td><span class="badge unk">미확인</span></td><td class="num">6.8%</td><td class="num col-wide">210 MB</td><td class="num col-wide dim">—</td></tr>
+          <tr><td><span class="badge run">실행 중</span></td><td class="label">org.example.cache</td><td><span class="badge unk">미확인</span></td><td class="num">1.2%</td><td class="num col-wide">96 MB</td><td class="num col-wide">6380</td></tr>
+          <tr><td><span class="badge fail">실패 · 78</span></td><td class="label">com.example.thumbnailer</td><td><span class="badge na">—</span></td><td class="num dim">—</td><td class="num col-wide dim">—</td><td class="num col-wide dim">—</td></tr>
+          <tr><td><span class="badge wait">대기</span></td><td class="label">com.example.media-sync</td><td><span class="badge na">—</span></td><td class="num dim">—</td><td class="num col-wide dim">—</td><td class="num col-wide dim">—</td></tr>
+          <tr><td><span class="badge run">실행 중</span></td><td class="label">dev.example.docs</td><td><span class="badge unk">미확인</span></td><td class="num">0.1%</td><td class="num col-wide">24 MB</td><td class="num col-wide">4000</td></tr>
+          <tr><td><span class="badge wait">대기</span></td><td class="label">com.example.ingest-watch</td><td><span class="badge na">—</span></td><td class="num dim">—</td><td class="num col-wide dim">—</td><td class="num col-wide dim">—</td></tr>
+          <tr><td><span class="badge run">실행 중</span></td><td class="label">dev.example.preview</td><td><span class="badge unk">미확인</span></td><td class="num">0.0%</td><td class="num col-wide">18 MB</td><td class="num col-wide">5173</td></tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <aside class="win-detail">
+                        <div>
+                          <div class="d-label">dev.example.api</div>
+                          <div class="d-badges"><span class="badge run">실행 중</span><span class="badge unk">미확인</span></div>
+                        </div>
+                        <dl>
+                          <dt>종류</dt><dd>사용자 LaunchAgent</dd>
+                          <dt>파일</dt><dd><code>~/Library/LaunchAgents/dev.example.api.plist</code></dd>
+                          <dt>PID</dt><dd>4123</dd>
+                          <dt>건강</dt><dd>미확인 — 아직 건강 확인 기능 없음</dd>
+                          <dt>수신 포트</dt><dd>TCP 8080</dd>
+                        </dl>
+                        <div class="d-graph">
+                          <h5>CPU, 최근 1시간 <b>2.1%</b></h5>
+                          <svg viewBox="0 0 100 30" preserveAspectRatio="none"><line class="base" x1="0" y1="29.5" x2="100" y2="29.5"/><polygon class="area" points="0,30 0,22 8,20 16,23 24,18 32,21 40,12 48,19 56,22 64,17 72,20 80,9 88,16 100,14 100,30"/><polyline class="line" points="0,22 8,20 16,23 24,18 32,21 40,12 48,19 56,22 64,17 72,20 80,9 88,16 100,14"/></svg>
+                        </div>
+                        <div class="d-graph">
+                          <h5>메모리 (RSS) <b>142 MB</b></h5>
+                          <svg viewBox="0 0 100 30" preserveAspectRatio="none"><line class="base" x1="0" y1="29.5" x2="100" y2="29.5"/><polygon class="area alt" points="0,30 0,19 10,18.5 20,18 30,17.5 40,17 50,16 60,16 70,15 80,14.5 90,14 100,13 100,30"/><polyline class="line alt" points="0,19 10,18.5 20,18 30,17.5 40,17 50,16 60,16 70,15 80,14.5 90,14 100,13"/></svg>
+                        </div>
+                        <div class="d-actions"><span class="is-dim">시작</span><span>재시작</span><span>중지</span></div>
+                        <p class="d-note">실행할 때마다 먼저 확인합니다.</p>
+                      </aside>
+                    </div>
+                    <div class="win-status"><span>서비스 9개</span><span>주의 필요 1개</span><span>3초 전 갱신</span><span>원격 송신 없음</span></div>
+                  </div>
+        </div>
+      </div>
+      <figcaption>다른 Mac 두 대를 추가한 Launch Board 화면입니다. 여기 나오는 label과 기기 이름은 모두 예시입니다.</figcaption>
+      <p class="visually-hidden">창에는 예시 서비스 9개가 실행 상태(실행 중, 대기, 실패), 건강 상태(건강 확인 기능이 아직 없어 모두 미확인), CPU, 메모리, TCP 포트와 함께 나열됩니다. 선택한 서비스 dev.example.api의 상세 패널에는 plist 파일, PID, 수신 포트, CPU와 메모리 이력, 시작·재시작·중지 버튼이 있습니다.</p>
+    </figure>
   </section>
 
   <section class="section" id="features" aria-labelledby="features-title">
-    <div class="wrap">
+    <div class="page-wrap">
       <h2 class="section-title" id="features-title">보여 주는 것과 할 수 있는 것</h2>
+      <p class="section-intro">Mac의 launchd 서비스를 한 창에서 봅니다. 무엇이 실행 중이고 무엇이 대기하거나 실패했는지, 어떤 TCP 포트를 열고 있는지 확인합니다. 다른 Mac을 SSH로 추가하면 함께 볼 수 있습니다.</p>
       <div class="features">
-        <div class="feature feature-lead">
+        <div class="card feature-lead">
           <div>
             <h3>실행 중이라고 정상은 아닙니다.</h3>
             <p>launchd가 서비스를 실행하고 있는지와 서비스가 실제로 제 일을 하는지를 따로 다룹니다. 건강 확인 기능은 아직 없으므로 건강 상태는 미확인으로 표시합니다. 실행 중이라는 이유만으로 초록불을 켜지 않습니다.</p>
@@ -158,27 +220,27 @@
             </tbody>
           </table>
         </div>
-        <div class="feature">
+        <div class="card">
           <h3>다른 Mac은 읽기 전용으로</h3>
           <p>다른 Mac을 SSH로 추가하면 이 Mac의 서비스와 나란히 보입니다. 원격 Mac은 보기만 하고 바꾸지 않습니다.</p>
         </div>
-        <div class="feature">
+        <div class="card">
           <h3>시작, 재시작, 중지</h3>
           <p>내 LaunchAgent를 창에서 바로 제어합니다. 실행할 때마다 먼저 확인을 받습니다.</p>
         </div>
-        <div class="feature">
+        <div class="card">
           <h3>CPU, 메모리, 포트</h3>
-          <p>서비스별 CPU·RSS 이력과 수신 대기 중인 TCP 포트를 보여 줍니다.</p>
+          <p>서비스별 CPU·RSS 이력과 수신 대기 중인 TCP 포트를 보여 줍니다. 이력은 설정에서 등록하는 수집기가 있어야 쌓입니다. 측정은 서비스의 대표 프로세스(PID)만 대상이며 자식 프로세스는 포함하지 않습니다.</p>
         </div>
-        <div class="feature">
+        <div class="card">
           <h3>그룹, 즐겨찾기, 검색</h3>
           <p>프로젝트별로 서비스를 묶고, 매일 보는 서비스는 즐겨찾기에 넣습니다. label은 입력하는 대로 찾아 줍니다.</p>
         </div>
-        <div class="feature">
+        <div class="card">
           <h3>메뉴 막대에서도</h3>
           <p>창을 열지 않고도 주의가 필요한 서비스를 메뉴 막대에서 확인합니다.</p>
         </div>
-        <div class="feature">
+        <div class="card">
           <h3>어디에도 보내지 않습니다</h3>
           <p>분석 도구도, 텔레메트리도, 계정도 없습니다. 외부 연결은 직접 설정한 SSH 세션뿐입니다.</p>
         </div>
@@ -188,15 +250,15 @@
   </section>
 
   <section class="section" id="install" aria-labelledby="install-title">
-    <div class="wrap">
+    <div class="page-wrap">
       <h2 class="section-title" id="install-title">설치</h2>
       <div class="install">
-        <div class="install-block">
+        <div class="card">
           <h3>앱 내려받기</h3>
           <p>디스크 이미지입니다. 열어서 Launch Board를 응용 프로그램 폴더로 드래그합니다.</p>
-          <a class="btn btn-primary" href="/ko/launch-board/download/"><svg viewBox="0 0 18 18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5v9M5 8l4 4 4-4M3 15.5h12"/></svg>Mac용 다운로드</a>
+          <a class="btn" href="/ko/launch-board/download/"><svg viewBox="0 0 18 18" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5v9M5 8l4 4 4-4M3 15.5h12"/></svg>Mac용 다운로드</a>
         </div>
-        <div class="install-block">
+        <div class="card">
           <h3>Homebrew로 설치</h3>
           <p>Ardor Labs tap에서 설치합니다. 업데이트는 <code>brew upgrade</code>로 합니다.</p>
           <div class="code">
@@ -210,19 +272,19 @@
   </section>
 
   <section class="section" aria-labelledby="bounds-title">
-    <div class="wrap">
+    <div class="page-wrap">
       <h2 class="section-title" id="bounds-title">하지 않는 일</h2>
       <p class="section-intro">Launch Board는 바꾸기보다 보는 데 집중합니다. 아래 제한은 의도한 것입니다.</p>
       <ul class="bounds">
-        <li><strong>시스템 서비스는 읽기만</strong><span>제어할 수 있는 것은 내 LaunchAgent뿐입니다. 시스템 서비스는 시작·중지·편집하지 않으며, LaunchDaemon은 정의만 읽고 실행 상태를 미확인으로 표시합니다.</span></li>
-        <li><strong>원격 제어 없음</strong><span>다른 Mac은 조회 전용입니다. 그 Mac의 서비스를 바꾸려면 해당 Mac에서 직접 해야 합니다.</span></li>
-        <li><strong>plist 삭제 없음</strong><span>Launch Board는 plist 파일을 지우지 않습니다. 서비스를 없앨지는 사용자가 정합니다.</span></li>
+        <li class="card"><strong>시스템 서비스는 읽기만</strong><span>제어할 수 있는 것은 내 LaunchAgent뿐입니다. 시스템 서비스는 시작·중지·편집하지 않으며, LaunchDaemon은 정의만 읽고 실행 상태를 미확인으로 표시합니다.</span></li>
+        <li class="card"><strong>원격 제어 없음</strong><span>다른 Mac은 조회 전용입니다. 그 Mac의 서비스를 바꾸려면 해당 Mac에서 직접 해야 합니다.</span></li>
+        <li class="card"><strong>plist 삭제 없음</strong><span>Launch Board는 plist 파일을 지우지 않습니다. 서비스를 없앨지는 사용자가 정합니다.</span></li>
       </ul>
     </div>
   </section>
 
   <section class="section" id="faq" aria-labelledby="faq-title">
-    <div class="wrap">
+    <div class="page-wrap">
       <h2 class="section-title" id="faq-title">자주 묻는 질문</h2>
       <div class="faq">
         <details>
@@ -246,15 +308,16 @@
   </section>
 
   <section class="section" aria-labelledby="more-title">
-    <div class="wrap">
+    <div class="page-wrap">
       <h2 class="section-title" id="more-title">Ardor Labs 더 보기</h2>
       <div class="more">
-        <a class="more-link" href="/ko/"><svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg><span><strong>Ardor Labs</strong><span>모든 앱</span></span></a>
-        <div class="app-slot viewfinder"><strong>다음 앱</strong><span>준비 중</span></div>
+        <a class="card more-link" href="/ko/"><svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg><span><strong>Ardor Labs</strong><span>모든 앱</span></span></a>
+        <div class="slot"><strong>다음 앱</strong><span>준비 중</span></div>
       </div>
     </div>
   </section>
 </main>
+
 <script>
   // Copy button for the Homebrew command (inline: page-specific, no external requests)
   (function () {
@@ -274,15 +337,15 @@
     });
   })();
 </script>
+
 <footer class="site-footer">
-  <div class="wrap">
-    <p class="foot-brand"><svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg><span>© 2026 Ardor Labs</span></p>
-    <ul class="foot-links" aria-label="다른 채널">
-      <li><a href="https://github.com/ardorframes-labs">GitHub</a></li>
-      <li class="soon">YouTube <small>준비 중</small></li>
-      <li class="soon">Instagram <small>준비 중</small></li>
-    </ul>
-  </div>
+  <svg class="footer-mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg>
+  <ul class="footer-links">
+    <li><a href="https://github.com/ardorframes-labs">GitHub</a></li>
+    <li><span class="soon">YouTube <small>준비 중</small></span></li>
+    <li><span class="soon">Instagram <small>준비 중</small></span></li>
+  </ul>
+  <p class="copy">© 2026 Ardor Labs</p>
 </footer>
 </body>
 </html>

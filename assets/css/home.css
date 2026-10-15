@@ -1,0 +1,182 @@
+.hero {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: clamp(28px, 4vw, 52px) var(--gutter) clamp(56px, 20vh, 200px);
+  isolation: isolate;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -64px 0 0;
+  z-index: -1;
+  background:
+    radial-gradient(38% 58% at 50% 0%, rgba(255, 255, 255, .055), transparent 70%),
+    radial-gradient(60% 40% at 50% 34%, rgba(255, 92, 51, .05), transparent 75%);
+  pointer-events: none;
+}
+
+.stage {
+  position: relative;
+  padding: clamp(18px, 2.4vw, 30px) clamp(28px, 3.6vw, 48px);
+}
+
+.viewfinder { position: absolute; inset: 0; pointer-events: none; }
+.viewfinder i {
+  position: absolute;
+  width: 11px; height: 11px;
+  border: 0 solid var(--layer-22);
+}
+.viewfinder i:nth-child(1) { top: 0; left: 0; border-top-width: 1px; border-left-width: 1px; }
+.viewfinder i:nth-child(2) { top: 0; right: 0; border-top-width: 1px; border-right-width: 1px; }
+.viewfinder i:nth-child(3) { bottom: 0; left: 0; border-bottom-width: 1px; border-left-width: 1px; }
+.viewfinder i:nth-child(4) { bottom: 0; right: 0; border-bottom-width: 1px; border-right-width: 1px; }
+
+.monolith {
+  position: relative;
+  width: clamp(92px, 10vw, 148px);
+  aspect-ratio: 443 / 523;
+}
+.cube {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 14px 18px rgba(0, 0, 0, .55));
+}
+
+.halo {
+  position: absolute;
+  z-index: 0;
+  left: 18%;
+  top: -22%;
+  width: 104%;
+  height: 62%;
+  background: radial-gradient(closest-side, rgba(255, 92, 51, .34), rgba(255, 92, 51, .12) 55%, transparent);
+  filter: blur(4px);
+  opacity: .8;
+  pointer-events: none;
+}
+
+.floor {
+  position: absolute;
+  left: 50%;
+  bottom: -9%;
+  width: 150%;
+  height: 16%;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(closest-side, rgba(0, 0, 0, .7), transparent 70%),
+    radial-gradient(closest-side, rgba(255, 255, 255, .07), transparent);
+  pointer-events: none;
+}
+
+.hero h1 {
+  margin-top: clamp(26px, 3.4vw, 42px);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 5.7vw, 5.25rem);
+  line-height: 1.04;
+  letter-spacing: -.012em;
+  max-width: 14ch;
+  text-wrap: balance;
+}
+@media (min-width: 900px) {
+  .hero h1 { max-width: none; }
+}
+
+
+.app {
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  text-align: center;
+}
+.app-intro { display: grid; justify-items: center; max-width: 44rem; min-width: 0; }
+.app-icon { width: 88px; height: 88px; }
+.app h2 {
+  margin-top: 18px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.1;
+}
+.app-line {
+  margin-top: 14px;
+  max-width: 34em;
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--ink-85);
+  text-wrap: pretty;
+}
+.app-intro .btn { margin-top: 28px; }
+
+.next {
+  display: grid;
+  justify-items: center;
+  padding: clamp(96px, 12vw, 168px) var(--gutter) 0;
+}
+.ghost {
+  position: relative;
+  width: min(100%, 520px);
+  padding: 72px 24px 64px;
+  border-radius: var(--r-window);
+  border: 1px dashed var(--layer-22);
+  background: linear-gradient(180deg, var(--layer-06), transparent 70%);
+  text-align: center;
+}
+.ghost-bar {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  display: flex;
+  gap: 7px;
+}
+.ghost-bar i { width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--layer-22); }
+.ghost h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.1;
+}
+.ghost p { margin-top: 8px; color: var(--ink-60); }
+
+
+@media (max-width: 30em) {
+  .hero { padding-inline: 16px; }
+  .app, .next { padding-inline: 16px; }
+  .ghost { padding: 60px 16px 52px; }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .cube { animation: band-on 1.6s .35s var(--ease-out) both; }
+  .halo { animation: halo-on 1.6s .35s var(--ease-out) both, breathe 7s 2s ease-in-out infinite; }
+  .is-hero-offscreen .halo { animation-play-state: paused; }
+
+  @keyframes band-on {
+    from { --band: #4A4642; }
+    to   { --band: #FF5C33; }
+  }
+  @keyframes halo-on {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: .8; transform: scale(1); }
+    50%      { opacity: .5; transform: scale(.94); }
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .monolith {
+      animation: recede linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 70vh;
+    }
+    @keyframes recede {
+      to { transform: translateY(-9vh) scale(.9); opacity: .45; }
+    }
+  }
+}

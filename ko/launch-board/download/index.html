@@ -13,17 +13,21 @@
 <link rel="alternate" hreflang="x-default" href="https://labs.ardorframes.com/launch-board/download/">
 <link rel="icon" href="/assets/brand/ardor-labs-cube-orange-sm.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/tokens.css">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/page.css">
 <script src="/assets/js/lang.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/ko/" aria-label="Ardor Labs 홈">
-      <svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg>
-      <span class="brand-word" aria-hidden="true">Ardor Labs</span>
-    </a>
+    <div class="brand-lockup">
+      <a class="brand" href="/ko/" aria-label="Ardor Labs 홈">
+        <svg class="brand-mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg>
+      </a>
+      <a class="brand-app" href="/ko/launch-board/">Launch Board</a>
+    </div>
     <nav class="site-nav" aria-label="주 메뉴">
       <a href="/ko/#apps">앱</a>
       <a data-nav="github" href="https://github.com/ardorframes-labs">GitHub</a>
@@ -40,32 +44,51 @@
   </div>
 </header>
 
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <g id="cube" transform="translate(0,523) scale(.1,-.1)">
+      <path class="band-top" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/>
+      <g class="cube-ink">
+        <path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/>
+        <path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/>
+        <path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/>
+        <path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/>
+        <path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/>
+        <path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/>
+        <path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/>
+        <path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/>
+        <path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/>
+        <path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/>
+        <path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/>
+        <path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/>
+        <path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
 <main id="main">
   <section class="dl-hero" aria-labelledby="dl-title">
-    <div class="wrap">
-      <img src="/assets/brand/launch-board-icon.svg" alt="" width="88" height="88">
-      <div>
-        <h1 class="display" id="dl-title">다운로드를 시작합니다…</h1>
-        <p class="lead">macOS 14 이상용 Launch Board 0.3.1입니다. 브라우저의 다운로드 목록을 확인하세요.</p>
-        <p class="muted">다운로드가 시작되지 않으면 <a href="https://github.com/ardorframes-labs/launch-board/releases/latest/download/Launch-Board.dmg">Launch-Board.dmg를 직접 내려받으세요</a>.</p>
-      </div>
-    </div>
+    <img src="/assets/brand/launch-board-icon.svg" alt="" width="88" height="88">
+    <h1 id="dl-title">다운로드를 시작합니다…</h1>
+    <p class="lead">macOS 14 이상용 Launch Board 0.3.1입니다. 브라우저의 다운로드 목록을 확인하세요.</p>
+    <p class="muted">다운로드가 시작되지 않으면 <a href="https://github.com/ardorframes-labs/launch-board/releases/latest/download/Launch-Board.dmg">Launch-Board.dmg를 직접 내려받으세요</a>.</p>
   </section>
 
   <section class="section" aria-labelledby="steps-title">
-    <div class="wrap">
+    <div class="page-wrap">
       <h2 class="section-title" id="steps-title">세 단계로 설치</h2>
       <ol class="steps">
-        <li>
+        <li class="card">
           <h3>응용 프로그램 폴더로 드래그</h3>
           <p>Launch-Board.dmg를 열고 Launch Board를 응용 프로그램 폴더로 드래그합니다.</p>
           <div class="drag-demo" aria-hidden="true"><img src="/assets/brand/launch-board-icon.svg" alt=""><span class="arrow"></span><span class="folder"></span></div>
         </li>
-        <li>
+        <li class="card">
           <h3>앱 열기</h3>
           <p>응용 프로그램 폴더에서 Launch Board를 엽니다. 인터넷에서 받은 앱이라 macOS가 한 번 확인을 요청하면 열기를 누릅니다.</p>
         </li>
-        <li class="is-optional">
+        <li class="card is-optional">
           <h3>추가 설정 <span class="muted">(선택)</span></h3>
           <p>설정에서 수집기를 등록하면 창을 닫아도 CPU와 메모리 이력이 계속 쌓입니다. 명령행 도구(CLI)&#8288;도 여기서 연결합니다.</p>
         </li>
@@ -78,15 +101,15 @@
     </div>
   </section>
 </main>
+
 <footer class="site-footer">
-  <div class="wrap">
-    <p class="foot-brand"><svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg><span>© 2026 Ardor Labs</span></p>
-    <ul class="foot-links" aria-label="다른 채널">
-      <li><a href="https://github.com/ardorframes-labs">GitHub</a></li>
-      <li class="soon">YouTube <small>준비 중</small></li>
-      <li class="soon">Instagram <small>준비 중</small></li>
-    </ul>
-  </div>
+  <svg class="footer-mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg>
+  <ul class="footer-links">
+    <li><a href="https://github.com/ardorframes-labs">GitHub</a></li>
+    <li><span class="soon">YouTube <small>준비 중</small></span></li>
+    <li><span class="soon">Instagram <small>준비 중</small></span></li>
+  </ul>
+  <p class="copy">© 2026 Ardor Labs</p>
 </footer>
 </body>
 </html>

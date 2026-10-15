@@ -13,19 +13,22 @@
 <link rel="alternate" hreflang="x-default" href="https://labs.ardorframes.com/">
 <link rel="icon" href="/assets/brand/ardor-labs-cube-orange-sm.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/tokens.css">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/home.css">
 <script src="/assets/js/lang.js"></script>
+<script src="/assets/js/home.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Ardor Labs home">
-      <svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg>
-      <span class="brand-word" aria-hidden="true">Ardor Labs</span>
+      <svg class="brand-mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg>
+      <span class="brand-word" aria-hidden="true">ARDOR LABS</span>
     </a>
     <nav class="site-nav" aria-label="Main">
-      <a href="/#apps">Apps</a>
+      <a href="#apps">Apps</a>
       <a data-nav="github" href="https://github.com/ardorframes-labs">GitHub</a>
     </nav>
     <div class="lang" data-lang-switch>
@@ -40,48 +43,191 @@
   </div>
 </header>
 
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <linearGradient id="ink-light" gradientUnits="userSpaceOnUse" x1="0" y1="5230" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#EDEAE6"/>
+      <stop offset="1" stop-color="#A9A39C"/>
+    </linearGradient>
+    <g id="cube" transform="translate(0,523) scale(.1,-.1)">
+      <path class="band-top" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/>
+      <g class="cube-ink">
+        <path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/>
+        <path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/>
+        <path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/>
+        <path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/>
+        <path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/>
+        <path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/>
+        <path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/>
+        <path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/>
+        <path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/>
+        <path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/>
+        <path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/>
+        <path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/>
+        <path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
 <main id="main">
-  <section class="home-intro" aria-labelledby="hero-title">
-    <div class="wrap">
-      <h1 id="hero-title">Mac tools made by directing AI.</h1>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="stage">
+      <div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="monolith">
+        <div class="halo" aria-hidden="true"></div>
+        <svg class="cube" style="--cube-ink: url(#ink-light)" viewBox="0 0 443 523" role="img" aria-label="Ardor Labs cube"><use href="#cube"/></svg>
+        <div class="floor" aria-hidden="true"></div>
+      </div>
     </div>
+    <h1 id="hero-title">Frame by frame, tool by tool.</h1>
   </section>
 
-  <section class="section" id="apps" aria-labelledby="apps-title">
-    <div class="wrap">
-      <h2 class="section-title" id="apps-title">Apps</h2>
-      <p class="section-intro">One so far. Each app has its own page with the download, install steps, and a link to the source.</p>
-      <div class="apps-grid">
-        <article class="app-card">
-          <img src="/assets/brand/launch-board-icon.svg" alt="" width="88" height="88">
-          <div>
-            <h3><a href="/launch-board/">Launch Board</a></h3>
-            <p>See and control the launchd services on your Mac, and check on your other Macs without touching them.</p>
-            <ul class="facts" aria-label="Details">
-              <li class="is-version">Latest 0.3.1</li>
-              <li>macOS 14+</li>
-              <li>Open source</li>
-              <li>No data collected</li>
-            </ul>
+  <section class="app" id="apps" aria-labelledby="lb-title">
+    <div class="app-intro">
+      <img class="app-icon" src="/assets/brand/launch-board-icon.svg" width="88" height="88" alt="">
+      <h2 id="lb-title">Launch Board</h2>
+      <p class="app-line">See and control the launchd services on your Mac, and check on your other Macs without touching them.</p>
+      <ul class="badges" aria-label="Release details">
+        <li><span>Latest</span> 0.3.1</li>
+        <li>macOS 14+</li>
+        <li>Open source</li>
+        <li>No data collected</li>
+      </ul>
+      <a class="btn" href="/launch-board/">Explore Launch Board</a>
+    </div>
+
+    <figure class="showcase">
+      <div class="float">
+        <div class="shot">
+          <div class="window" aria-hidden="true">
+            <div class="win-titlebar">
+              <div class="traffic"><i></i><i></i><i></i></div>
+              <div class="win-title">Launch Board <span>This Mac</span></div>
+              <div class="win-tools">
+                <div class="win-seg"><b>User agents</b><span>System</span></div>
+                <div class="win-search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="4.6"/><path d="M10.4 10.4L14 14"/></svg>Search labels</div>
+              </div>
+            </div>
+            <div class="win-body">
+              <div class="win-side">
+                <h4>My services</h4>
+                <ul>
+                  <li class="is-active">All services <em>9</em></li>
+                  <li>Favorites <em>2</em></li>
+                  <li>Needs attention <em>1</em></li>
+                </ul>
+                <h4>Groups</h4>
+                <ul>
+                  <li><span class="sw" style="background:#FF5C33"></span>Dev servers <em>4</em></li>
+                  <li><span class="sw" style="background:#5B8DEF"></span>Backups <em>2</em></li>
+                  <li><span class="sw" style="background:#9AA3B2"></span>Media <em>3</em></li>
+                </ul>
+                <h4>Servers</h4>
+                <ul>
+                  <li><span class="host"></span>This Mac</li>
+                  <li><span class="host"></span>studio-mac <span class="ro">view only</span></li>
+                  <li><span class="host is-off"></span>build-mini <span class="ro">offline</span></li>
+                </ul>
+              </div>
+              <div class="win-main">
+                <div class="win-main-head">
+                  <strong>All services</strong><span>9</span>
+                  <span class="chip is-on">All</span><span class="chip">Running</span><span class="chip">Failed</span>
+                </div>
+                <table class="svc">
+                  <thead><tr><th>State</th><th>Label</th><th>Health</th><th class="num">CPU</th><th class="num col-wide">RSS</th><th class="num col-wide">TCP port</th></tr></thead>
+                  <tbody>
+<tr class="is-selected"><td><span class="badge run">Running</span></td><td class="label"><span class="star">★</span>dev.example.api</td><td><span class="badge unk">Unverified</span></td><td class="num">2.1%</td><td class="num col-wide">142 MB</td><td class="num col-wide">8080</td></tr>
+<tr><td><span class="badge run">Running</span></td><td class="label"><span class="star">★</span>com.example.backup</td><td><span class="badge unk">Unverified</span></td><td class="num">0.3%</td><td class="num col-wide">38 MB</td><td class="num col-wide dim">-</td></tr>
+<tr><td><span class="badge run">Running</span></td><td class="label">dev.example.worker</td><td><span class="badge unk">Unverified</span></td><td class="num">6.8%</td><td class="num col-wide">210 MB</td><td class="num col-wide dim">-</td></tr>
+<tr><td><span class="badge run">Running</span></td><td class="label">com.example.cache</td><td><span class="badge unk">Unverified</span></td><td class="num">1.2%</td><td class="num col-wide">96 MB</td><td class="num col-wide">6380</td></tr>
+<tr><td><span class="badge fail">Failed 78</span></td><td class="label">com.example.thumbnailer</td><td><span class="badge na">-</span></td><td class="num dim">-</td><td class="num col-wide dim">-</td><td class="num col-wide dim">-</td></tr>
+<tr><td><span class="badge wait">Waiting</span></td><td class="label">com.example.media-sync</td><td><span class="badge na">-</span></td><td class="num dim">-</td><td class="num col-wide dim">-</td><td class="num col-wide dim">-</td></tr>
+<tr><td><span class="badge run">Running</span></td><td class="label">dev.example.docs</td><td><span class="badge unk">Unverified</span></td><td class="num">0.1%</td><td class="num col-wide">24 MB</td><td class="num col-wide">4000</td></tr>
+<tr><td><span class="badge wait">Waiting</span></td><td class="label">com.example.ingest-watch</td><td><span class="badge na">-</span></td><td class="num dim">-</td><td class="num col-wide dim">-</td><td class="num col-wide dim">-</td></tr>
+<tr><td><span class="badge run">Running</span></td><td class="label">dev.example.preview</td><td><span class="badge unk">Unverified</span></td><td class="num">0.0%</td><td class="num col-wide">18 MB</td><td class="num col-wide">5173</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="win-detail">
+                <div>
+                  <div class="d-label">dev.example.api</div>
+                  <div class="d-badges"><span class="badge run">Running</span><span class="badge unk">Unverified</span></div>
+                </div>
+                <dl>
+                  <dt>Type</dt><dd>User LaunchAgent</dd>
+                  <dt>File</dt><dd><code>~/Library/LaunchAgents/dev.example.api.plist</code></dd>
+                  <dt>PID</dt><dd>4123</dd>
+                  <dt>Health</dt><dd>Unverified, no health checks yet</dd>
+                  <dt>Listening</dt><dd>TCP 8080</dd>
+                </dl>
+                <div class="d-graph">
+                  <h5>CPU, last hour <b>2.1%</b></h5>
+                  <svg viewBox="0 0 100 30" preserveAspectRatio="none"><line class="base" x1="0" y1="29.5" x2="100" y2="29.5"/><polygon class="area" points="0,30 0,22 8,20 16,23 24,18 32,21 40,12 48,19 56,22 64,17 72,20 80,9 88,16 100,14 100,30"/><polyline class="line" points="0,22 8,20 16,23 24,18 32,21 40,12 48,19 56,22 64,17 72,20 80,9 88,16 100,14"/></svg>
+                </div>
+                <div class="d-graph">
+                  <h5>Memory (RSS) <b>142 MB</b></h5>
+                  <svg viewBox="0 0 100 30" preserveAspectRatio="none"><line class="base" x1="0" y1="29.5" x2="100" y2="29.5"/><polygon class="area alt" points="0,30 0,19 10,18.5 20,18 30,17.5 40,17 50,16 60,16 70,15 80,14.5 90,14 100,13 100,30"/><polyline class="line alt" points="0,19 10,18.5 20,18 30,17.5 40,17 50,16 60,16 70,15 80,14.5 90,14 100,13"/></svg>
+                </div>
+                <div class="d-actions"><span class="is-dim">Start</span><span>Restart</span><span>Stop</span></div>
+                <p class="d-note">Asks before every action.</p>
+              </div>
+            </div>
+            <div class="win-status"><span>9 services</span><span>1 needs attention</span><span>Updated 3 s ago</span></div>
           </div>
-        </article>
-        <div class="app-slot viewfinder">
-          <strong>Next app</strong>
-          <span>Coming soon</span>
         </div>
       </div>
+      <figcaption>Launch Board with two other Macs added. Labels and machine names are examples.</figcaption>
+      <p class="visually-hidden">The window lists nine example services with their state, health, CPU, memory and TCP port. The selected service, dev.example.api, shows its plist file, PID, listening port, CPU and memory history, and Start, Restart and Stop buttons.</p>
+    </figure>
+
+    <figure class="demo" id="demo" data-demo data-label-pause="Pause demo" data-label-play="Play demo">
+      <div class="demo-window">
+        <div class="demo-bar">
+          <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="demo-title">Launch Board — demo</div>
+        </div>
+        <div class="demo-screen">
+          <video muted loop playsinline preload="none" poster="" data-poster=""
+                 aria-label="Launch Board demo recording: browse services, filter by state, switch to another Mac">
+            <source data-src="" type="video/webm; codecs=vp9">
+            <source data-src="" type="video/mp4">
+          </video>
+          <div class="demo-placeholder">
+            <span class="demo-tc" aria-hidden="true">00:00:00:00</span>
+            <span class="demo-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span class="demo-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.86l13.6-8.2a1 1 0 0 0 0-1.72L7.5 2.94A1 1 0 0 0 6 3.8Z"/></svg></span>
+            <span class="demo-cap">Demo recording coming soon</span>
+          </div>
+          <button class="demo-toggle" type="button" aria-label="Pause demo">
+            <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.86l13.6-8.2a1 1 0 0 0 0-1.72L7.5 2.94A1 1 0 0 0 6 3.8Z"/></svg>
+          </button>
+        </div>
+      </div>
+      <figcaption>A short, silent loop of Launch Board. Service and Mac names are examples.</figcaption>
+    </figure>
+  </section>
+
+  <section class="next" aria-labelledby="next-title">
+    <div class="ghost">
+      <div class="ghost-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <h2 id="next-title">Next app</h2>
+      <p>Coming soon</p>
     </div>
   </section>
 </main>
+
 <footer class="site-footer">
-  <div class="wrap">
-    <p class="foot-brand"><svg class="mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><g transform="translate(0,523) scale(.1,-.1)"><g fill="currentColor"><path class="accent" d="M1895 5104 c-110 -64 -201 -117 -203 -118 -1 -2 1539 -898 1783 -1037 l30 -17 198 116 c108 64 197 122 196 127 -1 9 -1783 1045 -1797 1045 -4 0 -97 -53 -207 -116z"/><path d="M1692 4614 l3 -236 170 -100 c94 -55 185 -109 203 -120 l32 -20 0 240 0 240 -196 116 c-108 64 -200 116 -205 116 -6 0 -8 -97 -7 -236z"/><path d="M803 4478 c-117 -67 -210 -125 -205 -129 19 -17 2308 -1342 2317 -1342 15 1 430 239 430 247 0 8 -2312 1346 -2323 1346 -4 0 -103 -55 -219 -122z"/><path d="M2380 4224 c-102 -58 -191 -109 -198 -113 -10 -6 755 -460 1283 -762 l30 -17 198 116 c108 64 197 122 196 127 -1 13 -1289 755 -1309 754 -8 0 -98 -47 -200 -105z"/><path d="M230 4154 c-107 -63 -201 -119 -208 -123 -12 -7 2270 -1365 2293 -1364 15 1 425 237 428 246 2 8 -2297 1357 -2311 1357 -4 0 -95 -52 -202 -116z"/><path d="M12 2619 l3 -1291 592 -339 592 -339 203 116 c112 64 206 120 211 123 4 4 -262 160 -592 347 l-600 339 -1 1051 0 1051 -199 117 c-110 64 -202 116 -205 116 -3 0 -5 -581 -4 -1291z"/><path d="M4228 3654 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M602 2605 l3 -966 213 -119 212 -119 0 963 0 963 -210 122 c-115 66 -212 121 -215 121 -3 0 -4 -434 -3 -965z"/><path d="M3688 3344 l-198 -116 0 -1284 0 -1284 53 30 c28 17 118 67 199 113 l148 82 0 1288 c0 708 -1 1287 -2 1287 -2 0 -92 -52 -200 -116z"/><path d="M1250 2621 l0 -569 78 -45 c42 -25 267 -155 500 -290 l422 -245 0 242 0 243 -290 169 -290 169 0 331 0 332 -204 116 c-112 64 -207 116 -210 116 -3 0 -6 -256 -6 -569z"/><path d="M3128 3032 l-207 -117 -1 -680 0 -680 -45 -28 -45 -29 0 -259 0 -260 58 39 c31 21 146 94 255 161 l197 123 0 924 c0 508 -1 924 -2 924 -2 0 -96 -53 -210 -118z"/><path d="M2550 2697 l-195 -113 -3 -1292 -2 -1292 52 30 c29 17 119 67 200 113 l148 82 0 1293 c0 710 -1 1292 -2 1292 -2 -1 -91 -51 -198 -113z"/><path d="M1123 1980 c-38 -23 -39 -32 -27 -257 l7 -120 56 -31 56 -31 175 100 c96 55 179 104 184 109 8 8 -368 238 -403 247 -9 2 -31 -6 -48 -17z"/><path d="M1997 980 c-131 -81 -241 -150 -243 -153 -3 -2 92 -59 211 -125 l216 -121 34 22 35 22 0 253 c0 138 -3 252 -7 252 -5 -1 -115 -68 -246 -150z"/></g></g></svg><span>© 2026 Ardor Labs</span></p>
-    <ul class="foot-links" aria-label="Elsewhere">
-      <li><a href="https://github.com/ardorframes-labs">GitHub</a></li>
-      <li class="soon">YouTube <small>Coming soon</small></li>
-      <li class="soon">Instagram <small>Coming soon</small></li>
-    </ul>
-  </div>
+  <svg class="footer-mark" viewBox="0 0 443 523" aria-hidden="true" focusable="false"><use href="#cube"/></svg>
+  <ul class="footer-links">
+    <li><a href="https://github.com/ardorframes-labs">GitHub</a></li>
+    <li><span class="soon">YouTube <small>Coming soon</small></span></li>
+    <li><span class="soon">Instagram <small>Coming soon</small></span></li>
+  </ul>
+  <p class="copy">© 2026 Ardor Labs</p>
 </footer>
 </body>
 </html>
