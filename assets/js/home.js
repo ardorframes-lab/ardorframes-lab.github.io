@@ -1,4 +1,4 @@
-// Ardor Labs home (promoted from directions/a-monolith).
+// Ardor Frames Lab home (promoted from directions/a-monolith).
 // Hero: pause the cube's breathing light while the hero is off screen.
 // Demo slot: if the <source data-src> values are filled in, load the
 //    recording when it nears the viewport, play it only while visible,

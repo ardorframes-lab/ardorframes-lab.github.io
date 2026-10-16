@@ -1,5 +1,5 @@
 /*
-  Ardor Labs — language switching (mockup)
+  Ardor Frames Lab — language switching (mockup)
 
   - English lives at the root, Korean under /ko/. Every page has a counterpart.
   - The globe menu links to the counterpart of the *current* page.
